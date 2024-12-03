@@ -1,0 +1,89 @@
+{% load static %}
+<!Doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Descarga de libros">
+    <meta name="keywords" content="libros, digitales, tienda, contactos, redes">
+    <meta name="author" content="Authentic Store">
+    <title>Contactos - Authentic Store</title>
+    <link rel="icon" href="{% static 'miapp/IMG/logotipo.png' %}" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'miapp/CSS/estilos.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Open+Sans&display=swap" rel="stylesheet">   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    {% include 'header.html' %} 
+
+    <br>
+    <div class="container my-5">
+        <div class="row align-items-center">
+          <div class="col-lg-12">
+              <h1 class="fw-bold display-6">Contactos de Authentic Store</h1>
+          </div>
+        </div>
+        <p>
+          En Authentic Store, valoramos la conexión con nuestra comunidad de lectores y clientes. 
+          Si tienes preguntas, comentarios o necesitas asistencia, no dudes en ponerte en contacto con nosotros. 
+          Nuestro equipo está disponible para ayudarte a resolver tus inquietudes y brindarte toda la información que 
+          necesites sobre nuestros servicios. ¡Estamos aquí para ti!
+        </p>
+    </div>
+    <br>
+
+    <section id="noticias">
+        <div class="container-fluid">
+          <br>
+          <h2 class="fw-bold tituloC" style="text-align: center;">Contactos de Autentic Store</h2>
+          <br>
+          <div class="row d-flex justify-content-center align-items-start">
+            <!-- Primera tarjeta -->
+            <div class="card mb-4 col-md-4 cartita">
+              <img src="{% static 'miapp/IMG/instagram.jpeg' %}" class="card-img-top" alt="IG">
+              <div class="card-body">
+                  <h5 class="card-title tituloCA">Instagram</h5>
+                  <p>Red social de Instagram</p>
+                  <a href="https://www.instagram.com" target="_blank" class="btn btn_p">
+                      Ver red social
+                  </a>
+              </div>
+            </div>
+
+            <!-- Segunda tarjeta -->
+            <div class="card mb-4 col-md-4 cartita">
+              <img src="{% static 'miapp/IMG/twitter.jpg' %}" class="card-img-top" alt="Twitter">
+              <div class="card-body">
+                  <h5 class="card-title tituloCA">Twitter</h5>
+                  <p>Red social de Twitter.</p>
+                  <a href="https://www.x.com" target="_blank" class="btn btn_p">
+                    Ver red social
+                  </a>
+              </div>
+            </div>
+
+            <div class="card mb-4 col-md-4 cartita">
+                <img src="{% static 'miapp/IMG/youtube.webp' %}" class="card-img-top" alt="YouTube">
+                <div class="card-body">
+                    <h5 class="card-title tituloCA">YouTube</h5>
+                    <p>Red social de YouTube.</p>
+                    <a href="https://www.youtube.com" target="_blank" class="btn btn_p">
+                        Ver red social
+                    </a>
+                </div>
+              </div>
+          </div>
+      </div>
+      <br>
+    </section>
+
+    {% include 'footer.html' %} 
+
+    <script src="{% static 'miapp/JS/productos.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-u4QKUsATjdPxSDLMUSYb7E8B3R79rsAM7RnR5YJMUf9zFftGnK/D2H3e4y6gKSJ9" crossorigin="anonymous"></script>
+  </body>
+</html>

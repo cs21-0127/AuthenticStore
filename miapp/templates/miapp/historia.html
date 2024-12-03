@@ -1,0 +1,125 @@
+{% load static %}
+<!Doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Descarga de libros">
+    <meta name="keywords" content="libros, digitales, tienda, historia, noticias">
+    <meta name="author" content="Authentic Store">
+    <title>Historia - Authentic Store</title>
+    <link rel="icon" href="{% static 'miapp/IMG/logotipo.png' %}" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'miapp/CSS/estilos.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Open+Sans&display=swap" rel="stylesheet">   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    {% include 'header.html' %} 
+
+    <br>
+    <div class="container my-5">
+        <div class="row align-items-center">
+          <div class="col-lg-12">
+              <h1 class="fw-bold display-6">Conoce la Historia de Authentic Store</h1>
+              <h3 class="mb-2">Una tienda con propósito y pasión</h3>
+              <p>
+                Tu nuevo portal de libros digitales en 2024. 
+                Encuentra una amplia colección de títulos en todos 
+                los géneros, desde novelas hasta libros académicos, 
+                disponibles para descarga rápida y segura. Nuestro 
+                compromiso es facilitar el acceso a la lectura digital
+                para estudiantes, profesionales y amantes de los 
+                libros. Descubre tu próxima lectura y disfruta del 
+                conocimiento al alcance de un clic.
+              </p>
+              <p>En Authentic Store, creemos que la lectura es un derecho universal y una herramienta poderosa para transformar vidas. 
+                Por eso, hemos diseñado una plataforma intuitiva que permite a nuestros usuarios explorar miles de títulos de manera 
+                sencilla y práctica. Desde los clásicos inmortales de la literatura hasta las últimas publicaciones científicas, 
+                ofrecemos algo para cada lector.</p>
+              <p>Nuestra misión es más que descargar libros: buscamos crear una comunidad de aprendizaje y crecimiento. Trabajamos 
+                de la mano con editoriales, autores independientes y expertos en diversos campos para garantizar que nuestros 
+                usuarios tengan acceso a contenido de calidad y relevancia. Además, promovemos la sostenibilidad digital, 
+                reduciendo el impacto ambiental que genera la impresión de libros físicos.</p>
+              <p>En el corazón de Authentic Store está la pasión por el conocimiento y el empoderamiento personal. Queremos que cada 
+                libro descargado sea una puerta abierta a nuevas ideas, perspectivas y oportunidades. Nuestro equipo trabaja 
+                incansablemente para enriquecer la oferta de títulos y proporcionar un servicio excepcional que haga de la 
+                lectura digital una experiencia gratificante.
+              </p>
+              <p>Authentic Store es más que una tienda; es un puente hacia un mundo de posibilidades. 
+                Únete a nosotros en este viaje y sé parte de una comunidad global que comparte el amor por los libros y el aprendizaje. 
+                La historia de Authentic Store es también la historia de cada lector que nos elige como su portal hacia el conocimiento.</p>
+          </div>
+        </div>
+    </div>
+
+        <!-- Botón para abrir el modal -->
+        <div class="text-center">
+          <button type="button" class="btn btn-primary btn_p" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            ⭐
+          </button>
+        </div>
+  
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Más sobre Authentic Store</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      Authentic Store tendra mas libros proximamente y mejores actualizaciones en la pagina web. Gracias por confiar en nosotros. Nos esforzamos por ofrecer contenido innovador y accesible para todos los públicos.
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+      <br>
+    <section id="noticias">
+        <div class="container-fluid">
+          <br>
+          <h2 class="fw-bold tituloC" style="text-align: center;">Noticias sobre Autentic Store</h2>
+          <br>
+          <div class="row d-flex justify-content-center align-items-start">
+            <!-- Primera tarjeta -->
+            <div class="card mb-4 col-md-4 cartita">
+              <img src="{% static 'miapp/IMG/ferialibro.jpg' %}" class="card-img-top" alt="Imagen de la expansión">
+              <div class="card-body">
+                  <h5 class="card-title tituloCA">La Feria del Libro en 2024!</h5>
+                  <p>La Feria del Libro 2024 concluye este domingo con literatura y arte en sus pabellones.</p>
+                  <a href="https://www.diariolibre.com/revista/cultura/2024/11/17/feria-del-libro-santo-domingo-actividades-literarias/2914511" target="_blank" class="btn btn_p">
+                      Leer más
+                  </a>
+              </div>
+            </div>
+
+            <!-- Segunda tarjeta -->
+            <div class="card mb-4 col-md-4 cartita">
+              <img src="{% static 'miapp/IMG/fil2024.jpg' %}" class="card-img-top" alt="Ofertas de Autentic Store">
+              <div class="card-body">
+                  <h5 class="card-title tituloCA">FIL Guadalajara 2024</h5>
+                  <p>España se luce en la FIL Guadalajara 2024, la feria del libro más importante en habla hispana.</p>
+                  <a href="https://www.clarin.com/cultura/espana-luce-fil-guadalajara-2024-feria-libro-importante-habla-hispana_0_mJjcruMAxW.html" target="_blank" class="btn btn_p">
+                    Leer más
+                  </a>
+              </div>
+            </div>
+          </div>
+      </div>
+      <br>
+    </section>
+
+    {% include 'footer.html' %} 
+
+    <script src="{% static 'miapp/JS/productos.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-u4QKUsATjdPxSDLMUSYb7E8B3R79rsAM7RnR5YJMUf9zFftGnK/D2H3e4y6gKSJ9" crossorigin="anonymous"></script>
+  </body>
+</html>
